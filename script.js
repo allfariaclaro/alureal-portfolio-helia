@@ -25,3 +25,6 @@ form?.addEventListener('submit',event=>{event.preventDefault();const data=new Fo
 const closeHeliaMenu=()=>{menuButton?.setAttribute('aria-expanded','false');nav?.classList.remove('open');document.body.classList.remove('menu-open');if(menuButton)menuButton.textContent='Menu'};
 menuButton?.addEventListener('click',()=>{menuButton.textContent=menuButton.getAttribute('aria-expanded')==='true'?'Fechar':'Menu'});
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&nav?.classList.contains('open')){closeHeliaMenu();menuButton?.focus()}});
+
+// polish-followup
+nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(menuButton)menuButton.textContent='Menu'}));
