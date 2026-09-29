@@ -1,4 +1,4 @@
-name: Deploy HELIA to GitHub Pages
+name: Deploy HELIA
 
 on:
   push:
@@ -24,12 +24,33 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+
+      - name: Validate platform
+        run: |
+          test -f index.html
+          test -f especialidades.html
+          test -f equipe.html
+          test -f agendamento.html
+          test -f portal.html
+          test -f exames.html
+          test -f documentos.html
+          test -f mensagens.html
+          test -f teleconsulta.html
+          test -f planos.html
+          test -f helia-data.js
+          test -f helia-app.js
+          test -f helia-app.css
+          node --check helia-data.js
+          node --check helia-app.js
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
       - name: Upload static site
         uses: actions/upload-pages-artifact@v4
         with:
           path: .
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
