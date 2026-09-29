@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#f4f7f3" />
+  <meta name="description" content="HELIA — clínica integrada. Projeto conceitual desenvolvido pela Alureal." />
+  <title>HELIA — cuidado integrado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="header" data-header>
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="HELIA, início"><span class="brand-dot" aria-hidden="true"></span><span>HELIA</span></a>
+      <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav" data-nav aria-label="Navegação principal">
+        <a href="#especialidades">Especialidades</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#jornada">Sua jornada</a>
+        <a class="nav-cta" href="#agendamento">Agendar consulta</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="kicker">Saúde integrada · São Paulo</span>
+          <h1>Cuidado que conecta <em>contexto, tempo e pessoas.</em></h1>
+          <p>Uma experiência clínica construída para reduzir atrito: da escolha da especialidade ao acompanhamento depois da consulta.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#agendamento">Agendar consulta</a>
+            <a class="button button-secondary" href="#especialidades">Ver especialidades</a>
+          </div>
+          <div class="hero-trust" aria-label="Destaques da experiência">
+            <span><b>01</b> prontuário integrado</span>
+            <span><b>04</b> especialidades</span>
+            <span><b>24h</b> acesso ao portal*</span>
+          </div>
+        </div>
+        <div class="hero-visual reveal" aria-label="Representação abstrata de cuidado integrado">
+          <div class="orb orb-main"><span>HELIA</span></div>
+          <div class="orb orb-a"><span>clínica</span></div>
+          <div class="orb orb-b"><span>dados</span></div>
+          <div class="orb orb-c"><span>retorno</span></div>
+          <span class="path path-a"></span><span class="path path-b"></span><span class="path path-c"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="Diferenciais">
+      <div class="container signal-grid">
+        <span>Agenda simples</span><span>Equipe conectada</span><span>Histórico centralizado</span><span>Experiência mobile</span>
+      </div>
+    </section>
+
+    <section id="especialidades" class="section specialties">
+      <div class="container">
+        <div class="section-head reveal"><div><span class="kicker">Especialidades</span><h2>Um cuidado que conversa entre si.</h2></div><p>O projeto demonstra como organizar serviços complexos sem transformar o site em um catálogo difícil de navegar.</p></div>
+        <div class="specialty-grid">
+          <article class="specialty-card reveal"><span class="index">01</span><div><h3>Clínica médica</h3><p>Primeiro ponto de contato para avaliação ampla e coordenação do cuidado.</p></div><button class="text-button" data-specialty="Clínica médica">Agendar ↗</button></article>
+          <article class="specialty-card reveal"><span class="index">02</span><div><h3>Cardiologia</h3><p>Acompanhamento preventivo e avaliação cardiovascular integrada ao histórico clínico.</p></div><button class="text-button" data-specialty="Cardiologia">Agendar ↗</button></article>
+          <article class="specialty-card reveal"><span class="index">03</span><div><h3>Dermatologia</h3><p>Consultas dermatológicas com jornada digital antes e depois do atendimento.</p></div><button class="text-button" data-specialty="Dermatologia">Agendar ↗</button></article>
+          <article class="specialty-card reveal"><span class="index">04</span><div><h3>Nutrição</h3><p>Plano de acompanhamento conectado à evolução e às demais especialidades.</p></div><button class="text-button" data-specialty="Nutrição">Agendar ↗</button></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipe" class="section team-section">
+      <div class="container">
+        <div class="section-head reveal"><div><span class="kicker">Equipe demonstrativa</span><h2>Perfis claros. Escolha sem ruído.</h2></div><p>Os profissionais abaixo são personagens fictícios criados apenas para demonstração de interface.</p></div>
+        <div class="team-grid">
+          <article class="doctor-card reveal"><div class="avatar avatar-1" aria-hidden="true"><span>AM</span></div><div><span class="tag">Clínica médica</span><h3>Dra. Ana Martins</h3><p>Atendimento adulto · coordenação do cuidado</p></div><button class="button button-small" data-doctor="Dra. Ana Martins">Ver horários</button></article>
+          <article class="doctor-card reveal"><div class="avatar avatar-2" aria-hidden="true"><span>RL</span></div><div><span class="tag">Cardiologia</span><h3>Dr. Rafael Lima</h3><p>Prevenção cardiovascular · acompanhamento</p></div><button class="button button-small" data-doctor="Dr. Rafael Lima">Ver horários</button></article>
+          <article class="doctor-card reveal"><div class="avatar avatar-3" aria-hidden="true"><span>CS</span></div><div><span class="tag">Dermatologia</span><h3>Dra. Clara Soares</h3><p>Dermatologia clínica · acompanhamento digital</p></div><button class="button button-small" data-doctor="Dra. Clara Soares">Ver horários</button></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="jornada" class="section journey-section">
+      <div class="container journey-grid">
+        <div class="journey-copy reveal"><span class="kicker">Jornada do paciente</span><h2>Menos etapas invisíveis.</h2><p>O fluxo foi desenhado para que cada ação importante apareça no momento certo: preparação, consulta, documentos e retorno.</p></div>
+        <ol class="journey-list reveal">
+          <li><span>01</span><div><h3>Escolha</h3><p>Especialidade, profissional e horário em uma única sequência.</p></div></li>
+          <li><span>02</span><div><h3>Preparação</h3><p>Orientações e documentos reunidos antes da consulta.</p></div></li>
+          <li><span>03</span><div><h3>Consulta</h3><p>Histórico acessível à equipe, evitando repetição desnecessária.</p></div></li>
+          <li><span>04</span><div><h3>Continuidade</h3><p>Resumo, próximos passos e retorno organizados no portal.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="portal-preview section">
+      <div class="container portal-shell reveal">
+        <div class="portal-sidebar"><div class="brand compact"><span class="brand-dot"></span><span>HELIA</span></div><nav><span class="active">Visão geral</span><span>Consultas</span><span>Documentos</span><span>Resultados</span><span>Mensagens</span></nav></div>
+        <div class="portal-main"><div class="portal-top"><div><span class="kicker">Portal do paciente</span><h2>Boa tarde, Marina.</h2></div><span class="profile-dot">MP</span></div><div class="portal-cards"><article><span>Próxima consulta</span><strong>Cardiologia</strong><small>Quinta · 14:30</small></article><article><span>Pendência</span><strong>Questionário pré-consulta</strong><small>Leva cerca de 3 minutos</small></article><article><span>Último documento</span><strong>Resumo clínico</strong><small>Disponível para consulta</small></article></div></div>
+      </div>
+    </section>
+
+    <section id="agendamento" class="section booking-section">
+      <div class="container booking-grid">
+        <div class="booking-copy reveal"><span class="kicker">Agendamento demonstrativo</span><h2>Da intenção ao horário em poucos passos.</h2><p>Este formulário é uma simulação de UX. Nenhum dado é enviado ou armazenado.</p></div>
+        <form class="booking-card reveal" data-booking-form>
+          <div class="form-row"><label><span>Especialidade</span><select name="especialidade" data-specialty-select required><option value="">Selecione</option><option>Clínica médica</option><option>Cardiologia</option><option>Dermatologia</option><option>Nutrição</option></select></label><label><span>Profissional</span><select name="profissional" data-doctor-select><option value="">Primeiro disponível</option><option>Dra. Ana Martins</option><option>Dr. Rafael Lima</option><option>Dra. Clara Soares</option></select></label></div>
+          <div class="form-row"><label><span>Data</span><input name="data" type="date" required></label><label><span>Horário</span><select name="horario" required><option value="">Selecione</option><option>08:30</option><option>10:00</option><option>14:30</option><option>16:00</option><option>17:30</option></select></label></div>
+          <label><span>Nome</span><input name="nome" autocomplete="name" placeholder="Seu nome" required></label>
+          <button class="button button-primary full" type="submit">Continuar agendamento</button>
+          <p class="booking-message" data-booking-message aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-grid"><div class="brand"><span class="brand-dot"></span><span>HELIA</span></div><p>Projeto conceitual desenvolvido pela <strong>Alureal</strong> para demonstração de design e tecnologia.</p><p class="fineprint">* Elementos, profissionais e funcionalidades são fictícios e não representam serviço médico real.</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
