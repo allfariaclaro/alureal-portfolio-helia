@@ -20,3 +20,8 @@ const io=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIn
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
 form?.addEventListener('submit',event=>{event.preventDefault();const data=new FormData(form);message.textContent=`Demonstração: ${data.get('especialidade')} em ${data.get('data')} às ${data.get('horario')} selecionada. Em produção, a próxima etapa confirmaria disponibilidade em tempo real.`});
+
+// portfolio-polish-2026-09-29
+const closeHeliaMenu=()=>{menuButton?.setAttribute('aria-expanded','false');nav?.classList.remove('open');document.body.classList.remove('menu-open');if(menuButton)menuButton.textContent='Menu'};
+menuButton?.addEventListener('click',()=>{menuButton.textContent=menuButton.getAttribute('aria-expanded')==='true'?'Fechar':'Menu'});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&nav?.classList.contains('open')){closeHeliaMenu();menuButton?.focus()}});
