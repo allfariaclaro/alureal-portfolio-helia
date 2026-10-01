@@ -1,0 +1,26 @@
+name: Validate HELIA demo
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+      - name: Check JavaScript syntax
+        run: |
+          node --check helia-data.js
+          node --check helia-app.js
+          node --check tests/booking-query.test.cjs
+      - name: Test booking query handling
+        run: node tests/booking-query.test.cjs
